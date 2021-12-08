@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TelaBuscaComponent implements OnInit {
 
+  textoBusca = "testando"
+
   constructor() { }
 
   ngOnInit(): void {
