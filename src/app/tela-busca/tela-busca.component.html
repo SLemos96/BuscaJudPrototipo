@@ -6,30 +6,72 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-<!-- Toolbar -->
-<div class="toolbar" role="banner">
-  <a routerLink="/">
-    <img
-      width="100"
+<header>
+  <div class="toolbar" role="banner">
+    <a routerLink="/">
+      <img
+        width="100"
+        alt="Angular Logo"
+        src="../assets/images/buscajud2.png"
+      />
+    </a>
+    <!-- <span>BuscaJud</span> -->
+      <!-- <div class="spacer"></div> -->
+      <!-- <p>a barra de busca vem aqui</p> -->
+      <div class="form">  
+        <form>
+          <label for="form-search"></label>
+          <input class="form-control" type="text" id="form-search" placeholder="Digite aqui para realizar sua busca" [value]="textoBusca">
+        </form>
+      </div>  
+      <div class="spacer"></div>
+      <img
+      width="200"
       alt="Angular Logo"
-      src="../assets/images/buscajud2.png"
+      src="../assets/images/trf5.PNG"
     />
-  </a>
-  <!-- <span>BuscaJud</span> -->
-    <!-- <div class="spacer"></div> -->
-    <!-- <p>a barra de busca vem aqui</p> -->
-    <div class="form">  
-      <form>
-        <label for="form-search"></label>
-        <input class="form-control" type="text" id="form-search" placeholder="Digite aqui para realizar sua busca" [value]="textoBusca">
-        <!-- <input class="form-control" type="search" placeholder="Digite aqui para realizar sua busca" aria-label="Search"> -->
-      </form>
-    </div>  
-    <div class="spacer"></div>
-    <img
-    width="200"
-    alt="Angular Logo"
-    src="../assets/images/trf5.PNG"
-  />
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div>
+      <div class="col-4">
+        <div class="sidenav">
+          <a href="#">Consulta Processual</a>
+          <a href="#">Consulta por Precatórios</a>
+          <a href="#">Portal da Transparência</a>
+          <a href="#">Notícias</a>
+          <a href="#">Carta de Serviços</a>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="content">
+          <div class="card">
+            <img src="../assets/images/buscajud2.png" alt="Avatar">
+            <div class="container">
+              <h4><b>John Doe</b></h4>
+              <p>Architect & Engineer</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="../assets/images/buscajud2.png" alt="Avatar">
+            <div class="container">
+              <h4><b>John Doe</b></h4>
+              <p>Architect & Engineer</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="../assets/images/buscajud2.png" alt="Avatar">
+            <div class="container">
+              <h4><b>John Doe</b></h4>
+              <p>Architect & Engineer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+
