@@ -18,7 +18,7 @@
     <div class="form">  
       <form>
         <label for="form-search"></label>
-        <input class="form-control" type="text" id="form-search" placeholder="Digite aqui para realizar sua busca">
+        <input [(ngModel)]="termoBusca" name="termoBusca" class="form-control" type="text" id="form-search" placeholder="Digite aqui para realizar sua busca">
         <!-- <input class="form-control" type="search" placeholder="Digite aqui para realizar sua busca" aria-label="Search"> -->
       </form>
     </div>  
@@ -26,7 +26,7 @@
     <!-- BUTTONS -->
     <div class= "buttons">
       <form class="text-center">
-        <a routerLink="/result" class="btn btn-outline-primary">BuscaJUD</a>
+        <a (click)="realizarBusca()" routerLink="/result" class="btn btn-outline-primary">BuscaJUD</a>
         <!-- <a href="./loading.html">
           <button class="btn btn-outline-primary" type="submit">BuscaJUD</button>
          </a> -->

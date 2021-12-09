@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { TelaBuscaComponent } from './tela-busca/tela-busca.component';
 import { BuscaProcessoComponentComponent } from './busca-processo-component/busca-processo-component.component';
 import { HomeComponentComponent } from './home-component/home-component.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HomeComponentComponent } from './home-component/home-component.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
