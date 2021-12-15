@@ -8,7 +8,7 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <!-- Toolbar -->
-<div class="toolbar" role="banner">
+<!-- <div class="toolbar" role="banner">
   <a routerLink="/">
     <img
       width="100"
@@ -16,14 +16,12 @@
       src="../assets/images/buscajud2.png"
     />
   </a>
-  <!-- <span>BuscaJud</span> -->
-    <!-- <div class="spacer"></div> -->
-    <!-- <p>a barra de busca vem aqui</p> -->
+ 
     <div class="form">  
       <form>
         <label for="form-search"></label>
         <input class="form-control" type="text" id="form-search" placeholder="Digite aqui para realizar sua busca" [value]="textoBusca">
-        <!-- <input class="form-control" type="search" placeholder="Digite aqui para realizar sua busca" aria-label="Search"> -->
+       
       </form>
     </div>  
     <div class="spacer"></div>
@@ -32,4 +30,62 @@
     alt="Angular Logo"
     src="../assets/images/trf5.PNG"
   />
+</div> -->
+
+
+<div class="main">
+
+	<nav class="mb-4 navbar navbar-light bg-light">
+		<div class="container-fluid">
+		  <a class="navbar-brand">BuscaJUD</a>
+		  <form class="d-flex">
+			<input class="form-control me-2" type="search" placeholder="Digite aqui para realizar sua busca" aria-label="Search">
+			<button class="btn btn-outline-primary" type="submit">Pesquisar</button>
+		  </form>
+		</div>
+	  </nav>
+	<div class="m-2 d-flex align-items-start">
+		<div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+		  <button class="nav-link active" id="v-pills-processos-tab" data-bs-toggle="pill" data-bs-target="#v-pills-processos" type="button" role="tab" aria-controls="v-pills-processos" aria-selected="true">Processos</button>
+		  <button class="nav-link" id="v-pills-precatorios-tab" data-bs-toggle="pill" data-bs-target="#v-pills-precatorios" type="button" role="tab" aria-controls="v-pills-precatorios" aria-selected="false">Precatórios/RPV</button>
+		  <button class="nav-link" id="v-pills-contatos-tab" data-bs-toggle="pill" data-bs-target="#v-pills-contatos" type="button" role="tab" aria-controls="v-pills-contatos" aria-selected="false">Contatos</button>
+		  <button class="nav-link" id="v-pills-transparencia-tab" data-bs-toggle="pill" data-bs-target="#v-pills-transparencia" type="button" role="tab" aria-controls="v-pills-transparencia" aria-selected="false">Transparência</button>
+		  <button class="nav-link" id="v-pills-servicos-tab" data-bs-toggle="pill" data-bs-target="#v-pills-servicos" type="button" role="tab" aria-controls="v-pills-servicos" aria-selected="false">Serviços</button>
+		  <button class="nav-link" id="v-pills-noticias-tab" data-bs-toggle="pill" data-bs-target="#v-pills-noticias" type="button" role="tab" aria-controls="v-pills-noticias" aria-selected="false">Notícias</button>
+		</div>
+		<div class="tab-content" id="v-pills-tabContent">
+		
+		  <div class="tab-pane fade show active" id="v-pills-processos" role="tabpanel" aria-labelledby="v-pills-processos-tab">
+			
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<app-card></app-card>
+					</div>
+					<div class="mt-2 col-sm-12">
+						<app-card></app-card>
+					</div>
+				</div>
+			</div>
+		  </div>
+
+		  <div class="tab-pane fade" id="v-pills-precatorios" role="tabpanel" aria-labelledby="v-pills-precatorios-tab">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<app-card></app-card>
+					</div>
+					<div class="mt-2 col-sm-12">
+						<app-card></app-card>
+					</div>
+				</div>
+			</div>
+		  </div>
+		  <div class="tab-pane fade" id="v-pills-contatos" role="tabpanel" aria-labelledby="v-pills-contatos-tab">...</div>
+		  <div class="tab-pane fade" id="v-pills-transparencia" role="tabpanel" aria-labelledby="v-pills-transparencia-tab">...</div>
+		  <div class="tab-pane fade" id="v-pills-servicos" role="tabpanel" aria-labelledby="v-pills-servicos-tab">...</div>
+		  <div class="tab-pane fade" id="v-pills-noticias" role="tabpanel" aria-labelledby="v-pills-noticias-tab">...</div>
+		</div>
+	</div>
+	  <app-footer></app-footer>
 </div>

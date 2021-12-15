@@ -6,17 +6,25 @@ import { AppComponent } from './app.component';
 import { TelaBuscaComponent } from './tela-busca/tela-busca.component';
 import { BuscaProcessoComponentComponent } from './busca-processo-component/busca-processo-component.component';
 import { HomeComponentComponent } from './home-component/home-component.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { CardComponent } from './card/card.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
     AppComponent,
     TelaBuscaComponent,
     BuscaProcessoComponentComponent,
-    HomeComponentComponent
+    HomeComponentComponent,
+    HeaderComponent,
+    FooterComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
