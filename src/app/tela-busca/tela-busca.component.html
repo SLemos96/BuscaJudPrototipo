@@ -37,7 +37,7 @@
 
 	<nav class="mb-4 navbar navbar-light bg-light">
 		<div class="container-fluid">
-		  <a class="navbar-brand">BuscaJUD</a>
+		  <a routerLink="/" class="navbar-brand">BuscaJUD</a>
 		  <form class="d-flex">
 			<input class="form-control me-2" type="search" placeholder="Digite aqui para realizar sua busca" aria-label="Search" [value]="textoBusca">
 			<button class="btn btn-outline-primary" type="submit">Pesquisar</button>
@@ -60,10 +60,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
-						<app-card></app-card>
+						<app-card [mensagem]="processo1"></app-card>
 					</div>
 					<div class="mt-2 col-sm-12">
-						<app-card></app-card>
+						<app-card [mensagem]="processo2"></app-card>
 					</div>
 				</div>
 			</div>
@@ -73,10 +73,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
-						<app-card></app-card>
+						<app-card [mensagem]="processo3"></app-card>
 					</div>
 					<div class="mt-2 col-sm-12">
-						<app-card></app-card>
+						<app-card [mensagem]="processo4"></app-card>
 					</div>
 				</div>
 			</div>
