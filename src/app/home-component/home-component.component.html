@@ -15,12 +15,12 @@
 			<div class="form">  
 				<form>
 					<label for="form-search"></label>
-					<input class="form-control" type="text" id="form-search" placeholder="Digite aqui para realizar sua busca">
+					<input [(ngModel)]="termoBusca" name="termoBusca" class="form-control" type="text" id="form-search" placeholder="Digite aqui para realizar sua busca">
 				</form>
 			</div>  
 
 			<a class="d-flex justify-content-center mt-2" routerLink="/result">
-				<button type="button" class="btn btn-outline-primary">
+				<button (click)="realizarBusca()" type="button" class="btn btn-outline-primary">
 					Pesquisar
 				</button>
 			</a>
