@@ -12,6 +12,7 @@ import { CardComponent } from './card/card.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
 import { CardContatosComponent } from './card-contatos/card-contatos.component';
+import { CardNoticiasComponent } from './card-noticias/card-noticias.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { CardContatosComponent } from './card-contatos/card-contatos.component';
     FooterComponent,
     CardComponent,
     CardContatosComponent,
+    CardNoticiasComponent,
   ],
   imports: [
     BrowserModule,
