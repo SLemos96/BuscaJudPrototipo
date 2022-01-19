@@ -20,6 +20,9 @@ export class TelaBuscaComponent implements OnInit {
   processo3: string[] = ['2000015-15.2019.4.05.8302', 'Conclusos para decisão', 'DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO|Atos Administrativos|Improbidade Administrativa|Enriquecimento ilícito|'];
   processo4: string[] = ['2000006-53.2019.4.05.8302', 'Baixa Definitiva', 'DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO|Domínio Público|Imóvel Funcional|Reintegração de Posse|'];
 
+  contato1: string[] = ['6ª Vara - Natal', 'Marco Bruno Clementino Miranda', '(84)99999-9999 | marcomiranda@jfrn.br', 'Juiz Federal Titular da 6ª Vara ', 'Integrante do Centro de Inteligencia do Poder Judiciário'];
+  contato2: string[] = ['2ª Vara - Aracaju', 'Ronivon de Aragão', '(84)99999-9999 | ', 'Juiz Federal Titular da 2ª Vara ', ' '];
+
   constructor(private telabuscaService: TelaBuscaService) { }
 
 
