@@ -13,6 +13,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
 import { BuscaServicoComponentComponent } from './busca-servico-component/busca-servico-component.component';
 import { BuscaTransparenciaComponentComponent } from './busca-transparencia-component/busca-transparencia-component.component';
+import { CardContatosComponent } from './card-contatos/card-contatos.component';
+import { CardNoticiasComponent } from './card-noticias/card-noticias.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { BuscaTransparenciaComponentComponent } from './busca-transparencia-comp
     CardComponent,
     BuscaServicoComponentComponent,
     BuscaTransparenciaComponentComponent,
+    CardContatosComponent,
+    CardNoticiasComponent,
   ],
   imports: [
     BrowserModule,

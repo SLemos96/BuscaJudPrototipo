@@ -20,6 +20,22 @@ export class TelaBuscaComponent implements OnInit {
   processo3: string[] = ['2000015-15.2019.4.05.8302', 'Conclusos para decisão', 'DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO|Atos Administrativos|Improbidade Administrativa|Enriquecimento ilícito|'];
   processo4: string[] = ['2000006-53.2019.4.05.8302', 'Baixa Definitiva', 'DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO|Domínio Público|Imóvel Funcional|Reintegração de Posse|'];
 
+  contato1: string[] = ['6ª Vara - Natal', 'Marco Bruno Clementino Miranda', '(84)99999-9999 | marcomiranda@jfrn.br', 'Juiz Federal Titular da 6ª Vara ', 'Integrante do Centro de Inteligencia do Poder Judiciário'];
+  contato2: string[] = ['2ª Vara - Aracaju', 'Ronivon de Aragão', '(84)99999-9999 | ', 'Juiz Federal Titular da 2ª Vara ', ' '];
+
+  noticia1: string[] = ['https://www4.trf5.jus.br/comunicacao-social/anexo/110513', 
+                        'NAS publica cartilha com orientações de saúde para o trabalho presencial', 
+                        'Depois de quase dois anos funcionando no regime de teletrabalho, o Tribunal Regional Federal da 5ª Região – TRF5 retoma, na próxima sexta-feira (21), as atividades presenciais na Corte.', 
+                        'https://www.trf5.jus.br/index.php/noticias/leitura-de-noticias?/id=323866'];
+  noticia2: string[] = ['https://www4.trf5.jus.br/comunicacao-social/anexo/110509', 
+                        'NAS alerta servidores do TRF5 para epidemia da gripe Influenza H3N2', 
+                        'O Núcleo de Assistência à Saúde (NAS) do Tribunal Regional Federal da 5ª Região – TRF5 emitiu um alerta para servidores e terceirizados da Corte que estão trabalhando presencialmente, em razão da epidemia da gripe Influenza A (vírus H3N2) e da chegada da variante ômicron, que tem se disseminado no país com rapidez.', 
+                        'https://www.trf5.jus.br/index.php/noticias/leitura-de-noticias?/id=323858'];
+  noticia3: string[] = ['https://www4.trf5.jus.br/comunicacao-social/anexo/110512', 
+                        'Novos servidores participam de reunião de acolhimento com o NDRH', 
+                        'O Núcleo de Desenvolvimento de Recursos Humanos (NDRH) do Tribunal Regional Federal da 5ª Região – TRF5 promoveu uma reunião de acolhimento com os novos servidores da Corte. O encontro foi coordenado pela diretora do NDRH, Isaura Aragão.', 
+                        'https://www.trf5.jus.br/index.php/noticias/leitura-de-noticias?/id=323864'];
+
   constructor(private telabuscaService: TelaBuscaService) { }
 
 
