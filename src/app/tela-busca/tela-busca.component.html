@@ -16,14 +16,14 @@
       src="../assets/images/buscajud2.png"
     />
   </a>
- 
-    <div class="form">  
+
+    <div class="form">
       <form>
         <label for="form-search"></label>
         <input class="form-control" type="text" id="form-search" placeholder="Digite aqui para realizar sua busca" [value]="textoBusca">
-       
+
       </form>
-    </div>  
+    </div>
     <div class="spacer"></div>
     <img
     width="200"
@@ -54,9 +54,9 @@
 		  <button class="nav-link" id="v-pills-noticias-tab" data-bs-toggle="pill" data-bs-target="#v-pills-noticias" type="button" role="tab" aria-controls="v-pills-noticias" aria-selected="false">Notícias</button>
 		</div>
 		<div class="tab-content" id="v-pills-tabContent">
-		
+
 		  <div class="tab-pane fade show active" id="v-pills-processos" role="tabpanel" aria-labelledby="v-pills-processos-tab">
-			
+
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
@@ -82,8 +82,16 @@
 			</div>
 		  </div>
 		  <div class="tab-pane fade" id="v-pills-contatos" role="tabpanel" aria-labelledby="v-pills-contatos-tab">...</div>
-		  <div class="tab-pane fade" id="v-pills-transparencia" role="tabpanel" aria-labelledby="v-pills-transparencia-tab">...</div>
-		  <div class="tab-pane fade" id="v-pills-servicos" role="tabpanel" aria-labelledby="v-pills-servicos-tab">...</div>
+		  <div class="tab-pane fade" id="v-pills-transparencia" role="tabpanel" aria-labelledby="v-pills-transparencia-tab">
+        <div class="row">
+          <div class="col-sm-12">
+            <app-busca-transparencia-component></app-busca-transparencia-component>
+        </div>
+        </div>
+      </div>
+		  <div class="tab-pane fade" id="v-pills-servicos" role="tabpanel" aria-labelledby="v-pills-servicos-tab">
+        <app-busca-servico-component></app-busca-servico-component>
+      </div>
 		  <div class="tab-pane fade" id="v-pills-noticias" role="tabpanel" aria-labelledby="v-pills-noticias-tab">...</div>
 		</div>
 	</div>

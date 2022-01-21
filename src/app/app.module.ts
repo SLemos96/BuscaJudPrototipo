@@ -11,6 +11,8 @@ import { FooterComponent } from './footer/footer.component';
 import { CardComponent } from './card/card.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
+import { BuscaServicoComponentComponent } from './busca-servico-component/busca-servico-component.component';
+import { BuscaTransparenciaComponentComponent } from './busca-transparencia-component/busca-transparencia-component.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     FooterComponent,
     CardComponent,
+    BuscaServicoComponentComponent,
+    BuscaTransparenciaComponentComponent,
   ],
   imports: [
     BrowserModule,
