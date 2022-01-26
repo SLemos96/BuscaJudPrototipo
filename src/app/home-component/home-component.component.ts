@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { TelaBuscaService } from '../tela-busca/tela-busca.service';
 
 @Component({
@@ -10,7 +11,7 @@ export class HomeComponentComponent implements OnInit {
 
   termoBusca: string = "";
 
-  constructor(private telabuscaService: TelaBuscaService) { }
+  constructor(private telabuscaService: TelaBuscaService, public router: Router) { }
 
   ngOnInit(): void {
   }
@@ -23,6 +24,7 @@ export class HomeComponentComponent implements OnInit {
     //aqui vamos chamar o service para alimentar a variável com o conteúdo que está no input
     // console.log(this.termoBusca);
     this.telabuscaService.receberTermoBusca(this.termoBusca);
+    this.router.navigate(['/result']);
   }
 
 }
